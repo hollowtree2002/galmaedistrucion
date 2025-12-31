@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>갈매 철거 - 구리 갈매동 전문 철거 · 원상복구 업체</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="경기도 구리시 갈매동 상가·주택 철거, 원상복구, 폐기물 처리 전문업체 갈매 철거. 빠른 방문 견적 및 합리적인 비용으로 안전하게 시공합니다.">
+  <meta name="keywords" content="갈매 철거, 구리 철거, 원상복구, 상가 철거, 주택 철거, 인테리어 철거">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "맑은 고딕", "Malgun Gothic", system-ui, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f5f5f5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid #eee;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #0c5adb;
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: #222;
+      font-weight: 500;
+      font-size: 0.9rem;
+      margin-left: 6px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .nav-links a:hover {
+      border-bottom-color: #0c5adb;
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, #0c5adb, #243b6b);
+      color: #fff;
+      padding: 70px 0 60px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: 2.1rem;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 0.98rem;
+      opacity: 0.95;
+      margin-bottom: 20px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero-tag {
+      font-size: 0.8rem;
+      border-radius: 999px;
+      padding: 4px 12px;
+      background: #ffffff22;
+      border: 1px solid #ffffff55;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: #ffd84a;
+      color: #222;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      filter: brightness(1.05);
+    }
+
+    .btn-outline {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid #ffffffaa;
+      color: #fff;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: transparent;
+    }
+
+    .hero-call {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .hero-call strong {
+      font-size: 1.05rem;
+    }
+
+    .hero-box {
+      background: #ffffff11;
+      border-radius: 16px;
+      padding: 18px;
+      border: 1px solid #ffffff33;
+      font-size: 0.9rem;
+    }
+
+    .hero-box h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .hero-box ul {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .hero-box li {
+      margin-bottom: 6px;
+    }
+
+    .section {
+      padding: 50px 0 40px;
+      background: #fff;
+    }
+
+    .section:nth-of-type(even) {
+      background: #f9fafb;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 24px;
+    }
+
+    .about-box {
+      background: #f3f5ff;
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 0.9rem;
+      border: 1px solid #e0e4ff;
+    }
+
+    .about-box h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+
+    .about-list {
+      list-style: none;
+      font-size: 0.9rem;
+    }
+
+    .about-list li {
+      margin-bottom: 6px;
+    }
+
+    /* Services */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+      font-size: 0.9rem;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 8px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.85rem;
+      color: #4b5563;
+    }
+
+    .card ul li {
+      margin-bottom: 4px;
+    }
+
+    /* Process */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      font-size: 0.88rem;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #e5e7eb;
+      padding: 12px 12px 14px;
+    }
+
+    .step-number {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #0c5adb;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 4px;
+      font-size: 0.9rem;
+    }
+
+    .step p {
+      font-size: 0.82rem;
+      color: #4b5563;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .portfolio-item {
+      border-radius: 12px;
+      background: #111827;
+      color: #e5e7eb;
+      padding: 16px;
+      font-size: 0.88rem;
+    }
+
+    .portfolio-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #f9fafb;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 20px;
+    }
+
+    .contact-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 18px;
+      border: 1px solid #e5e7eb;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+    }
+
+    .contact-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-info {
+      margin-bottom: 12px;
+    }
+
+    .contact-info p {
+      margin-bottom: 4px;
+    }
+
+    .contact-highlight {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0c5adb;
+      margin-bottom: 8px;
+    }
+
+    form {
+      display: grid;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #d1d5db;
+      font-family: inherit;
+      font-size: 0.9rem;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 4px;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      padding: 18px 0;
+      font-size: 0.8rem;
+      margin-top: 20px;
+    }
+
+    footer .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: center;
+    }
+
+    footer strong {
+      color: #e5e7eb;
+    }
+
+    /* Floating call button */
+    .floating-call {
+      position: fixed;
+      right: 16px;
+      bottom: 18px;
+      z-index: 999;
+    }
+
+    .floating-call a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #10b981;
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(16, 185, 129, 0.4);
+    }
+
+    .floating-call a span {
+      margin-left: 6px;
+      font-weight: 700;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-inner,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .process-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 42px 0 32px;
+      }
+
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+
+      .cards,
+      .process-steps,
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .floating-call a {
+        padding: 9px 14px;
+        font-size: 0.85rem;
+      }
+
+      .floating-call a span {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Call Button -->
+  <div class="floating-call">
+    <a href="tel:01012341234">전화문의<span>010-1234-1234</span></a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">
+          갈매 철거
+          <span>구리·갈매 전문 철거 · 원상복구</span>
+        </div>
+        <div class="nav-links">
+          <a href="#about">회사소개</a>
+          <a href="#services">업무안내</a>
+          <a href="#process">진행절차</a>
+          <a href="#portfolio">시공사례</a>
+          <a href="#contact">견적문의</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>갈매·구리 지역<br>상가·주택 철거 & 원상복구 전문업체</h1>
+        <h2>현장 맞춤 방문견적 · 합리적인 비용 · 깔끔한 마무리</h2>
+        <p>
+          경기도 구리시 갈매중앙로 132에 위치한 <strong>갈매 철거</strong>는
+          상가, 주택, 사무실, 창고 등 각종 철거·원상복구 공사를
+          안전하게 시공하는 지역 전문 업체입니다.
+        </p>
+
+        <div class="hero-tags">
+          <div class="hero-tag">상가·사무실 내부 철거</div>
+          <div class="hero-tag">주택·원룸 철거</div>
+          <div class="hero-tag">부분철거(천장·벽체·바닥)</div>
+          <div class="hero-tag">폐기물 수거·처리</div>
+          <div class="hero-tag">원상복구 공사</div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="tel:01012341234" class="btn-primary">지금 바로 전화하기</a>
+          <a href="#contact" class="btn-outline">견적 문의 남기기</a>
+        </div>
+
+        <div class="hero-call">
+          상담 가능시간 : <strong>연중무휴 · 08:00 ~ 21:00</strong><br>
+          급한 철거, 야간 공사도 사전 협의 시 진행 가능합니다.
+        </div>
+      </div>
+
+      <div class="hero-box">
+        <h3>빠른 철거 견적 안내</h3>
+        <ul>
+          <li>· 주소 : 경기도 구리시 갈매중앙로 132</li>
+          <li>· 연락처 : <strong>010-1234-1234</strong></li>
+          <li>· 사진 전송 시 대략 견적 안내 후 방문 견적</li>
+          <li>· 공사 일정 및 폐기물 처리 방법 상세 안내</li>
+          <li>· 소규모 철거부터 전체 철거까지 모두 가능</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">회사소개</h2>
+      <p class="section-subtitle">
+        갈매 철거는 구리·남양주 인근 지역을 중심으로 상가, 주택, 사무실, 창고 등의
+        철거 및 원상복구 공사를 전문으로 진행합니다.
+      </p>
+
+      <div class="about-grid">
+        <div>
+          <p style="margin-bottom: 10px; font-size: 0.95rem;">
+            철거 공사는 단순히 ‘부수는 작업’이 아니라
+            <strong>안전, 폐기물 처리, 소음·먼지 관리</strong>가 모두 고려되어야 하는 전문 분야입니다.<br>
+            갈매 철거는 현장 경험을 바탕으로 주변 민원과 안전사고를 최소화하여,
+            깔끔한 마무리까지 책임지고 진행합니다.
+          </p>
+          <p style="font-size: 0.9rem;">
+            공사 규모와 상관없이 <strong>사전 현장 확인 → 공사 방법 설명 → 견적 안내 → 철거·청소</strong>까지
+            한 번에 진행해 드리며, 임대인·관리사무소에서 요구하는
+            <strong>원상복구 기준</strong>도 함께 확인하여 불필요한 재공사가 없도록 돕고 있습니다.
+          </p>
+        </div>
+
+        <div class="about-box">
+          <h3>갈매 철거의 강점</h3>
+          <ul class="about-list">
+            <li>· 구리·갈매·남양주 인근 지역 밀착 대응</li>
+            <li>· 소규모 철거부터 전체 철거까지 맞춤 진행</li>
+            <li>· 불필요한 공사 없이 꼭 필요한 부분만 제안</li>
+            <li>· 폐기물 적법 처리 및 현장 정리까지 책임</li>
+            <li>· 일정·비용을 사전 안내하여 깔끔한 마무리</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">업무안내</h2>
+      <p class="section-subtitle">
+        아래와 같은 철거 및 원상복구 공사를 주로 진행하고 있으며,
+        기타 공사도 상담을 통해 안내해 드립니다.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>상가 · 사무실 철거</h3>
+          <p>카페, 음식점, 학원, 사무실 등 영업장 내부 철거 및 원상복구 진행.</p>
+          <ul>
+            <li>· 인테리어 철거</li>
+            <li>· 간판·천장·벽체 철거</li>
+            <li>· 바닥 마감재 제거</li>
+            <li>· 설비·집기 철거 및 반출</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>주택 · 원룸 철거</h3>
+          <p>빌라, 단독주택, 원룸, 오피스텔 내부 철거 및 리모델링 전 철거.</p>
+          <ul>
+            <li>· 싱크대·붙박이장 철거</li>
+            <li>· 욕실·베란다 부분 철거</li>
+            <li>· 도배·장판 철거</li>
+            <li>· 오래된 집 내부 정리</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>부분 철거 공사</h3>
+          <p>전체 철거가 아닌 필요한 구간만 선택 철거.</p>
+          <ul>
+            <li>· 천장 일부 철거</li>
+            <li>· 벽체 및 파티션 철거</li>
+            <li>· 바닥 마감재 제거</li>
+            <li>· 창고·창고방 정리</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>폐기물 수거 · 처리</h3>
+          <p>철거 후 발생하는 각종 폐기물을 적법하게 처리.</p>
+          <ul>
+            <li>· 일반 폐기물 수거</li>
+            <li>· 가구·집기류 처리</li>
+            <li>· 공사 잔재물 처리</li>
+            <li>· 현장 청소 및 마무리</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>원상복구 공사</h3>
+          <p>임대인·관리사무소 요구 기준에 맞춘 원상복구.</p>
+          <ul>
+            <li>· 임대차 계약 종료 철거</li>
+            <li>· 바닥·벽체 기본 마감</li>
+            <li>· 관리실 협의 사항 반영</li>
+            <li>· 현장 사진 제공(요청 시)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>야간 · 공휴일 공사</h3>
+          <p>영업 중단이 어려운 매장 대상 시간 외 철거.</p>
+          <ul>
+            <li>· 야간 철거(사전 협의)</li>
+            <li>· 주말·공휴일 작업 가능</li>
+            <li>· 소음·먼지 최소화</li>
+            <li>· 주변 민원 고려 공사</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <h2 class="section-title">진행 절차</h2>
+      <p class="section-subtitle">
+        전화 한 통으로 간단하게 상담받으시고, 현장 확인 후 견적·공사까지 한 번에 진행해 드립니다.
+      </p>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">STEP 1</div>
+          <div class="step-title">전화 상담 · 사진 접수</div>
+          <p>현장 주소 및 철거 범위를 확인하고, 휴대폰 사진 전송 시 대략적인 비용 안내.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">STEP 2</div>
+          <div class="step-title">현장 방문 및 견적</div>
+          <p>직접 현장을 확인하여 필요한 공사 범위·작업 시간·폐기물 처리 비용 등 상세 견적 안내.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">STEP 3</div>
+          <div class="step-title">공사 진행</div>
+          <p>안전 수칙 준수하에 철거 공사 진행, 소음·먼지 최소화 및 주변 민원 고려 작업.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">STEP 4</div>
+          <div class="step-title">정리 · 마무리</div>
+          <p>폐기물 적법 처리, 현장 청소 후 상태 확인까지 마무리. 필요 시 사진 전송.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">시공사례</h2>
+      <p class="section-subtitle">
+        실제 공사 사진과 함께 공사 전·후 비교 이미지를 순차적으로 업데이트할 예정입니다.
+        (현재는 예시 문구로 구성되어 있습니다.)
+      </p>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <strong>상가 철거 · 원상복구</strong>
+          구리 카페 매장 내부 철거 후 바닥 및 벽체 기본 마감까지 원상복구 진행.
+        </div>
+        <div class="portfolio-item">
+          <strong>원룸 내부 철거</strong>
+          노후 원룸 내부 싱크대·붙박이장 철거 및 폐기물 처리, 리모델링 준비 완료.
+        </div>
+        <div class="portfolio-item">
+          <strong>사무실 파티션 철거</strong>
+          사무실 파티션 및 천장 일부 철거, 바닥 정리 후 재임대 준비.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">견적 문의 · 연락처</h2>
+      <p class="section-subtitle">
+        정확한 견적을 위해 가능한 한 현장 사진과 함께 문의해 주시면 빠르게 안내해 드립니다.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-box">
+          <h3>갈매 철거 연락처</h3>
+          <div class="contact-info">
+            <p class="contact-highlight">☎ 010-1234-1234</p>
+            <p>주소 : 경기도 구리시 갈매중앙로 132</p>
+            <p>상담 가능시간 : 08:00 ~ 21:00 (연중무휴)</p>
+          </div>
+          <p style="font-size: 0.88rem; margin-bottom: 8px;">
+            전화 또는 문자 문의 시 아래 내용을 함께 보내주시면 보다 정확한 견적 안내가 가능합니다.
+          </p>
+          <ul style="font-size: 0.85rem; list-style: none; margin-top: 4px;">
+            <li>· 철거 주소 (층수, 엘리베이터 유무)</li>
+            <li>· 철거 범위 (전체 / 부분 / 폐기물만 등)</li>
+            <li>· 현장 사진 3~5장 정도</li>
+            <li>· 희망 공사 날짜 및 시간</li>
+          </ul>
+        </div>
+
+        <div class="contact-box">
+          <h3>온라인 문의 양식 (예시)</h3>
+          <form>
+            <input type="text" name="name" placeholder="성함" required>
+            <input type="tel" name="phone" placeholder="연락처" required>
+            <input type="text" name="address" placeholder="현장 주소 (동·층수 포함)" required>
+            <textarea name="message" placeholder="철거 범위, 희망 일정, 참고사항 등을 적어주세요." required></textarea>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 4px;">
+              문의 내용 보내기 (폼 예시)
+            </button>
+            <p class="form-note">
+              ※ 실제 메일 연동이 필요하신 경우, 사이트 구축 시 메일 또는 문자 알림 기능을 추가 가능합니다.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>갈매 철거</strong> | 경기도 구리시 갈매중앙로 132 | 전화 : 010-1234-1234
+      </div>
+      <div>
+        ⓒ 갈매 철거. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
